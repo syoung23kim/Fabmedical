@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "Suffix": {
+      "value": "ksy"
+    },
+    "VirtualMachineAdminUsernameLinux": {
+      "value": "adminfabmedical"
+    },
+    "VirtualMachineAdminPublicKeyLinux": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTmzNhAHXUb44cPBDwSp3AWaXSfd5lueQ1udgf9xsdp+3gkWpr8HaPky6ZK/SrCEUzPJpUy6WpOh8+c8/EaiYrMRYo1/njOPM3tDlOg6hVDTsToiFqbZCVJAqosq/uVSB5HSNGT4r8A1cwr6zy5Z44TBR7DYf51sV8Rj8SrFO4TqDMkpZqEL4XeU2PkZJF7nh+CeU1hlYGgK47omKYCH1Mb2fgoJwPiBzC+Kjmfzh0PGMEHqpEv+YOAkrkaKuc2+16l3yEl0iAlB8SJhax9DznUeaoCMYFC7Tvfjzr4MWSfjPeGU7FvvGR4lfSCfeIieyS//371g7IQtkjpwAcALgZ admin@fabmedical"
+    },
+    "CosmosLocation": {
+      "value": "northeurope"
+    },
+    "CosmosLocationName": {
+      "value": "North Europe"
+    },
+    "CosmosPairedLocation": {
+      "value": "westeurope"
+    },
+    "CosmosPairedLocationName": {
+      "value": "West Europe"
+    }
+  }
+}
