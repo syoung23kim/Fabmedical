@@ -19,19 +19,19 @@
         },
         "CosmosLocation": {
             "type": "string",
-            "defaultValue": "eastus"
+            "defaultValue": "westus2"
         },
         "CosmosLocationName": {
             "type": "string",
-            "defaultValue": "East US"
+            "defaultValue": "West US 2"
         },
         "CosmosPairedLocation": {
             "type": "string",
-            "defaultValue": "westus"
+            "defaultValue": "westcentralus"
         },
         "CosmosPairedLocationName": {
             "type": "string",
-            "defaultValue": "West US"
+            "defaultValue": "West Central US"
         },
         "guid": {
             "type": "string",
@@ -102,12 +102,12 @@
         "registrySku": "Standard",
         "registryAdminUserEnabled": true,
         "kubernetesClusterName": "[concat('fabmedical-', parameters('Suffix'))]",
-        "kubernetesVersion": "1.21.2",
+        "kubernetesVersion": "1.22.4",
         "kubernetesDnsPrefix": "[concat('fabmedical-', parameters('Suffix'), '-dns')]",
         "kubernetesAgentOsType": "Linux",
         "kubernetesAgentOsDiskSizeGB": 0,
         "kubernetesAgentCount": 2,
-        "kubernetesAgentVmSize": "Standard_D2_v2",
+        "kubernetesAgentVmSize": "Standard_D8d_v4",
         "kubernetesNetworkProfilePlugin": "kubenet",
         "kubernetesRBACEnabled": true,
         "logAnalyticsName": "[concat('fabmed-', parameters('Suffix'),uniqueString(resourceGroup().id))]",
@@ -220,7 +220,7 @@
                     "imageReference": {
                         "publisher": "Canonical",
                         "offer": "UbuntuServer",
-                        "sku": "16.04-LTS",
+                        "sku": "18.04-LTS",
                         "version": "latest"
                     }
                 },
